@@ -1,0 +1,5 @@
+Change the files accordingly.
+Admin functionality should go in Admin class
+Staff functionality should go in Staff class
+you can use DBInterface class for querying the database and IO for printing and getting input
+Instances of these classes can be accessed through GlobalVars class
