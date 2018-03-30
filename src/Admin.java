@@ -3,6 +3,7 @@ public class Admin {
     //Should be able to to see all the orders (Current and previous based on months)
     //should be able to add or remove new fooditem in the database
 
+    public void Execute(){}
     public void ShowCurrentOrders(){
 
     }

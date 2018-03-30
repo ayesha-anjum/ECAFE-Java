@@ -3,3 +3,31 @@ Admin functionality should go in Admin class
 Staff functionality should go in Staff class
 you can use DBInterface class for querying the database and IO for printing and getting input
 Instances of these classes can be accessed through GlobalVars class
+
+
+/////////////////////////////////
+Get user input by printing a prompt message or just print a message using:
+String st=IO.getstring("Enter your name");
+int age=IO.getint("Enter your age");
+double weight=IO.getdouble("Your Weight");
+
+IO.print("Hello");
+IO.println("Hello");
+
+
+
+//Admin Functionality
+
+Just start from Execute function.
+Wheenever an admin will login, this function will be the called first. Create Menu and everything for admin.
+
+1. Should be able to see current orders, old orders 
+2. should be able to add or remove items from fooditems table
+3. should be able to see customized results for orders (e.g. from January onwards. Customization for months only will be enough)
+
+
+
+
+//Staff functionality
+1. Should be able to see currentorders and refresh the display after every 10 seconds.
+2. Should be able to change the status of any order (PS. just remove the record/entry from "currentorders" table)
