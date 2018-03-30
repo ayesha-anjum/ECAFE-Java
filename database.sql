@@ -3,7 +3,7 @@ create database ecafe;
 use ecafe;
 #getmethods table will contain delivery or pickup entries
 drop table if exists orderdelivery;
-create table getmethods(id int primary key not null, name varchar(30) not null);
+create table orderdelivery(id int primary key not null, name varchar(30) not null);
 
 drop table if exists paymentmethods;
 create table paymentmethods(methodid int primary key not null, methodname varchar(30) not null);
@@ -24,7 +24,7 @@ drop table if exists orderrepo;
 create table orderrepo(orderid int not null, userid int not null, pmethodid int not null,timeval datetime not null,foreign key(pmethodid) references paymentmethods(methodid), primary key(orderid,userid), foreign key(orderid) references orderdetails(orderid));
 
 drop table if exists currentorder;
-create table currentorder(orderid int not null,  userid int not null, methodid int not null,timeval datetime not null, foreign key(methodid) references getmethods(methodid));#for showing to staff
+create table currentorder(orderid int not null,  userid int not null, methodid int not null,timeval datetime not null, foreign key(methodid) references orderdelivery(id));#for showing to staff
 
 insert into orderdelivery values(1,'Delivery'),(2,'Cash');
 

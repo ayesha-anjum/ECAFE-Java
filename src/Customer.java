@@ -7,6 +7,6 @@ public class Customer {
     public void GenerateBill(){
 
     }
-    
+
 
 }
